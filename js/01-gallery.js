@@ -43,10 +43,10 @@ const instance = basicLightbox.create(`
 ,
   {
     onShow: () => {
-      galleryList.addEventListener('keydown', escPress)
+      document.addEventListener('keydown', escPress)
     },
     onClose: () => {
-      galleryList.addEventListener('keydown', escPress)
+      document.removeEventListener('keydown', escPress)
     },
   } 
 
